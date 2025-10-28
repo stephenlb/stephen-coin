@@ -1,0 +1,17 @@
+[package]
+name = "stephen-coin"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+## Quantum Resistant Cryptography Libraries
+pqc_sphincsplus = {version = "0.2.0", features = ["haraka", "f128", "simple"]}
+
+## Asynchronous Runtime
+tokio = { version = "1.48.0", features = ["full"] }
+
+## Ledger and Blockchain Libraries
+rusqlite = { version = "0.37.0", features = ["bundled"] }
+
+## Lua Scripting Integration (Smart Contracts)
+mlua = { version = "0.11.4", features = ["async", "luajit", "serde"] }
