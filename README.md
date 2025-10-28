@@ -1,5 +1,15 @@
 # *Stephen* Coin
 
+## TODO
+ - Dockerize ( because we need Lua )
+ - Schema
+ - Consensus Algorithm
+ - Smart Contracts Lib with Lua
+ - Block difficulty adjustment algorithm
+ - Networking
+ - Whitepaper - have the AI write it after we finish the code
+ - Website
+
 ## Name Ideas
 
  - STEPHEN coin - (STEPHEN = Secure, Trustworthy, Efficient, Peer-to-peer, Honest, Eco-friendly, New)
