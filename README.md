@@ -1,19 +1,23 @@
 # *Stephen* Coin
 
 ## TODO
- - Dockerize ( because we need Lua )
  - Schema
+ - Dockerize ( because we need LuaJit )
  - Consensus Algorithm
- - Smart Contracts Lib with Lua
  - Block difficulty adjustment algorithm
+ - Smart Contracts Lib with Lua
+ - GPU Access via Lua for AI training
  - Networking
  - Whitepaper - have the AI write it after we finish the code
  - Website
 
 ## Name Ideas
 
+ - STEPHEN NAKAMOTO COIN
  - STEPHEN coin - (STEPHEN = Secure, Trustworthy, Efficient, Peer-to-peer, Honest, Eco-friendly, New)
  - 42C - 42 Coin (The answer to life, the universe and everything)
+ - PUMPNUB - Pump NUB (Nub = New Unique Blockchain) Coin
+ - PUBNICK (PUB NUB NICKEL) ON THE BLUMCHAIN
  - SLB - Stephen Ledger Blockchain (Stepehn L. Blum)
  - SQRC - Stephen Quantum Resistent Coin
  - RustlsTheGoat Coin - (Rustls The Goat)
