@@ -23,3 +23,7 @@ CREATE TABLE IF NOT EXISTS transactions (
     data                 BLOB, -- lots of data!
     code                 TEXT  -- Lua Source Code for Smart Contract
 )
+
+-- TODO: Define blocks table
+-- CREATE TABLE IF NOT EXISTS blocks (
+-- )

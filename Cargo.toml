@@ -15,3 +15,6 @@ rusqlite = { version = "0.37.0", features = ["bundled"] }
 
 ## Lua Scripting Integration (Smart Contracts)
 mlua = { version = "0.11.4", features = ["async", "luajit", "serde"] }
+
+## AI Framework
+#burn = { version = "0.19.1" }
