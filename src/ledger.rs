@@ -45,26 +45,17 @@ pub async fn execute(conn: &Connection, query: &str) -> Result<(), Error> {
     Ok(())
 }
 
-pub async fn query(conn: &Connection, statement: &str) -> Result<(), Error> {
+pub async fn query(conn: &Connection, statement: &str) -> Result<()> {
     let mut stmt = conn.prepare(statement)?;
     let iter = stmt.query_map([], |row| {
-        let version = match row.get::<_, f64>(0) {
-            Ok(v) => v,
-            Err(e) => {
-                println!("Error retrieving version: {}", e);
-                return Err(e);
-            }
-        };
+        let version = row.get(0)?;
         Ok(Transaction {
-            version: version,
+            version,
         })
     })?;
 
     for transaction in iter {
-        match transaction {
-            Ok(tx) => println!("Found transaction {:?}", tx),
-            Err(e) => println!("Error retrieving transaction: {}", e),
-        }
+        println!("Found person {:?}", transaction?);
     }
 
     Ok(())
